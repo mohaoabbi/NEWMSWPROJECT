@@ -16,7 +16,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.server.handler.FindElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class testbrowser extends browserSetup {
 
@@ -59,9 +62,9 @@ public class testbrowser extends browserSetup {
 		Iterator it1 = windowset1.iterator();
 		driver.switchTo().window((String) it1.next());
 		
+		
 		System.out.println(driver.getTitle());
 		Thread.sleep(3000);
-		
 		
 		
 		driver.findElement(By.id("homeval")).sendKeys("500000");
