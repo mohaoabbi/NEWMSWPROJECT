@@ -34,7 +34,7 @@ public class browserSetup {
 		this.browser = browser;
 		this.url = url;
 		this.con= con;
-		dbconnect();
+		//dbconnect();
 		setup();
 		
 	}
