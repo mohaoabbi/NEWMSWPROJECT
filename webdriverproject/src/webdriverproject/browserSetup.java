@@ -8,11 +8,15 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Properties;
 import java.sql.Connection;
+
+import org.docx4j.wml.P.Dir;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+
+import bsh.commands.dir;
 
 
 
@@ -42,7 +46,7 @@ public class browserSetup {
 		public void setup() throws IOException, InterruptedException {
 		
 		Properties ppt = new Properties();
-		File filepath = new File("C:\\Users\\Abdel\\Documents\\wed_Class\\webdriverproject\\src\\Resources\\config.properties");
+		File filepath = new File(System.getProperty("user.dir")+"\\src\\Resources\\config.properties");
 		FileInputStream file = new FileInputStream(filepath);
 		ppt.load(file);
 		browser = ppt.getProperty("browser");
