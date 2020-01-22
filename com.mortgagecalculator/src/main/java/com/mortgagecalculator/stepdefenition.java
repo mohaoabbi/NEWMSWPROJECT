@@ -4,6 +4,7 @@ package com.mortgagecalculator;
 
 import java.util.List;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,20 +22,22 @@ public class stepdefenition {
 
 	static WebDriver driver,Br;
 	static String payval;
-		
+	static browserSetup browserSetup;	
 
 public stepdefenition(browserSetup browserSetup) throws Exception{
 		
 		driver = browserSetup.setup();
-		System.out.println("i'm here");
+	
 	}
 
 	
 	@Given("^user is on home page$")
 	public void user_is_on_home_page() throws Throwable {
-		
-		
-	  System.out.println("i'm here Given");
+		String title = "Mortgage Calculator";
+	String page = driver.getTitle();
+	Assert.assertEquals(title, page);
+	System.out.println(page);
+	
 	  
 	}
 
@@ -52,6 +55,15 @@ public stepdefenition(browserSetup browserSetup) throws Exception{
 		driver.findElement(By.id("intrstsrate")).sendKeys("4.75");
 		
 	  
+	}
+	@When("^user enters loan term value into loan term textbox$")
+	public void user_enters_loan_term_value_into_loan_term_textbox() throws Throwable {
+		driver.findElement(By.id("loanterm")).sendKeys("10");
+	}
+
+	@When("^entres property tax into property tax textbox$")
+	public void entres_property_tax_into_property_tax_textbox() throws Throwable {
+		driver.findElement(By.id("pptytax")).sendKeys("5000");
 	}
 
 	@Then("^clicks on submit button$")
@@ -72,7 +84,7 @@ public stepdefenition(browserSetup browserSetup) throws Exception{
 		String payvalres = payment1.get(5).getText();
 		System.out.println(payvalres.equals(payval));
 		System.out.println(payvalres);
-		
+		Assert.assertNotEquals(payment1, payval);
 		driver.quit();
 	  
 	}
