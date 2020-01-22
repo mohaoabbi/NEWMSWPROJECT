@@ -3,6 +3,7 @@ package com.mortgagecalculator;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -16,6 +17,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.BeforeMethod;
 
 
 
@@ -43,8 +45,8 @@ public class browserSetup {
 		setup();
 		
 	}*/
-		
-		public WebDriver setup() throws IOException, InterruptedException {
+	@BeforeMethod
+		public WebDriver setup() throws Exception {
 		
 		Properties ppt = new Properties();
 		File filepath = new File(System.getProperty("user.dir")+"\\target\\Resources\\config.properties");
@@ -61,7 +63,7 @@ public class browserSetup {
 		System.setProperty(key, browserPath);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-	
+		driver.get(url);
 		 }
 		 if (browser.equalsIgnoreCase("Firefox")) {
 				String key , browserPath;
@@ -70,7 +72,7 @@ public class browserSetup {
 				System.setProperty(key, browserPath);
 				driver = new FirefoxDriver();
 				driver.manage().window().maximize();
-				
+				driver.get(url);
 				 }
 		 if (browser.equalsIgnoreCase("Edge")) {
 				String key , browserPath;
@@ -81,7 +83,7 @@ public class browserSetup {
 				driver = new EdgeDriver();
 				
 				driver.manage().window().maximize();
-				
+				driver.get(url);
 				 }
 		 if (browser.equalsIgnoreCase("ie")) {
 				String key , browserPath;
@@ -90,11 +92,13 @@ public class browserSetup {
 				System.setProperty(key, browserPath);
 				driver = new InternetExplorerDriver();
 				driver.manage().window().maximize();
-				
+				driver.get(url);
 				 }
+		
 		 return driver;
 	}
 		
+	
 		public void dbconnect() throws Exception {
 			 urlc = "jdbc:mysql://localhost:3307/sakila";
 			 user = "Abdel"; 

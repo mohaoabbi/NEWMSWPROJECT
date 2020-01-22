@@ -58,7 +58,7 @@ public class testbrowser extends browserSetup {
 		Thread.sleep(3000);
 		
 		
-		driver.findElement(By.id("homeval")).sendKeys("500000");
+		//driver.findElement(By.id("homeval")).sendKeys("500000");
 		
 	
 		
