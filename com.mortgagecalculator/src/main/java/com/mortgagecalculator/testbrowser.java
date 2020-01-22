@@ -1,3 +1,4 @@
+package com.mortgagecalculator;
 
 
 import java.io.File;
@@ -13,8 +14,8 @@ import org.openqa.selenium.WebDriver;
 
 public class testbrowser extends browserSetup {
 
-	public testbrowser(WebDriver driver, String browser, String url,Connection con) throws Exception {
-		super(driver, browser,url,con);
+	public testbrowser(WebDriver driver, String browser, String url) throws Exception {
+		super(driver, browser,url);
 		
 	}
 
@@ -22,7 +23,7 @@ public class testbrowser extends browserSetup {
 		
 		
 		
-		testbrowser session = new testbrowser(driver,browser,url,con);
+		testbrowser session = new testbrowser(driver,browser,url);
 		driver.get(url);
 	    
 		driver.findElement(By.name("defaultbutton")).click();

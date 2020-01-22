@@ -1,3 +1,4 @@
+package com.mortgagecalculator;
 
 
 import java.io.File;
@@ -32,18 +33,18 @@ public class browserSetup {
 	static Statement st ;
 	static ResultSet result ;
 	
-	public browserSetup(WebDriver driver, String browser,String url, Connection con) throws Exception{
+	/*public browserSetup(WebDriver driver, String browser,String url) throws Exception{
 		
 		this.driver = driver;
 		this.browser = browser;
 		this.url = url;
-		this.con= con;
+	
 		//dbconnect();
 		setup();
 		
-	}
+	}*/
 		
-		public void setup() throws IOException, InterruptedException {
+		public WebDriver setup() throws IOException, InterruptedException {
 		
 		Properties ppt = new Properties();
 		File filepath = new File(System.getProperty("user.dir")+"\\target\\Resources\\config.properties");
@@ -91,6 +92,7 @@ public class browserSetup {
 				driver.manage().window().maximize();
 				
 				 }
+		 return driver;
 	}
 		
 		public void dbconnect() throws Exception {
