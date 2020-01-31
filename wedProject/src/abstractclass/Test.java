@@ -7,7 +7,7 @@ public class Test {
 		WebDriver c = new ChildFirefox();
 		c.captureScreenshot();
 		
-	System.out.println();
+	
 		
 		
 	}
