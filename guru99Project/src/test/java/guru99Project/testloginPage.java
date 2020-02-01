@@ -1,6 +1,6 @@
 package guru99Project;
 
-import fcs10Pages.loginPage;
+import guro99PagesPages.loginPage;
 
 public class testloginPage {
 

@@ -1,4 +1,4 @@
-package fcs10Pages;
+package guro99PagesPages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
