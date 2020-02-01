@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM http:/testng.org/testng-7.1.0.dtd>
+<suite name="login Suite">
+<test name= "login Test">
+<classes>
+<class name = "guru99Project.loginPage"/>
+</classes>
+</test>
+</suite>
