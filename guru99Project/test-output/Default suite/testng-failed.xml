@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="fcs10Pages.loginPage">
+      <class name="guru99Pages.loginPage">
         <methods>
-          <include name="cleanup"/>
-          <include name="getaquote"/>
           <include name="setupMethod"/>
+          <include name="getaquote"/>
+          <include name="cleanup"/>
         </methods>
-      </class> <!-- fcs10Pages.loginPage -->
+      </class> <!-- guru99Pages.loginPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,6 +1,6 @@
 package guru99Project;
 
-import guro99PagesPages.loginPage;
+import guru99Pages.loginPage;
 
 public class testloginPage {
 
