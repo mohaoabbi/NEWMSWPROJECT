@@ -2,20 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [login Suite]">
   <test thread-count="5" name="login Test(failed)">
-    <parameter name="password" value="zYqAvan"/>
     <parameter name="url" value="http://www.demo.guru99.com/V4/"/>
-    <parameter name="passwordN" value="hello"/>
-    <parameter name="username" value="mngr243094"/>
-    <parameter name="usernameN" value="mngr24678"/>
     <classes>
-      <class name="guru99Pages.loginPage">
+      <class name="guru99Pages.loginPagedataProvider">
         <methods>
-          <include name="positiveLogin" invocation-numbers="0"/>
           <include name="setupMethod"/>
-          <include name="negativeLogin" invocation-numbers="0"/>
           <include name="cleanup"/>
+          <include name="negativeLogin"/>
         </methods>
-      </class> <!-- guru99Pages.loginPage -->
+      </class> <!-- guru99Pages.loginPagedataProvider -->
     </classes>
   </test> <!-- login Test(failed) -->
 </suite> <!-- Failed suite [login Suite] -->

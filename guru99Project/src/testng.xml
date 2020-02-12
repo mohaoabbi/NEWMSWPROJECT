@@ -7,7 +7,7 @@
 <parameter name="usernameN" value="mngr24678"/>
 <parameter name="passwordN" value="hello"/>
 <classes>
-<class name = "guru99Pages.loginPage"/>
+<class name = "guru99Pages.loginPagedataProvider"/>
 </classes>
 </test>
 </suite>

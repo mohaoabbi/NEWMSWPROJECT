@@ -1,9 +1,21 @@
 package guru99Pages;
 
+import org.testng.annotations.Test;
+
+import com.beust.jcommander.Parameter;
+
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -13,51 +25,49 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class loginPage {
+	
+	// userName = mngr243094 , password = zYqAvan
 	static WebDriver driver;
-	@BeforeMethod() 
-	@Parameters({"url"})
-	public void setupMethod(String url) {
-		
+	static By Username = By.name("uid");
+	static By password = By.name("password");
+	static By btnLogin = By.name("btnLogin");
+	static By  vrfText = By.xpath("//td[contains(text(),'Manger Id : mngr243094')]");
+	
+	
+	
+	public static void navigateToBrowser() {
+	
 		driver = new ChromeDriver();
+		driver.get("http://www.demo.guru99.com/V4/");
 		driver.manage().window().maximize();
-		driver.get(url);
-	}
-	
-	@Test()
-	@Parameters({"username","password"})
-	
-	public void positiveLogin(String username, String password) {
-		
-		driver.findElement(By.xpath("//input[@name=\"uid\"]")).sendKeys(username);
-		driver.findElement(By.xpath("//input[@name=\"password\"]")).sendKeys(password);
-		driver.findElement(By.xpath("//input[@name=\"btnLogin\"]")).click();
-		String heading3= driver.findElement(By.xpath("//marquee[@class = \"heading3\"]")).getText();
-		String ecpected = "Welcome To Manager's Page of Guru99 Bank";
-		System.out.println(heading3);
-		Assert.assertEquals(heading3, ecpected);
 		
 	}
-	@Test()
-	@Parameters({"usernameN","passwordN"})
+public static void loginMethod(String userN,String pass) {
 	
-	public void negativeLogin(String usernameN, String passwordN) {
-		
-		driver.findElement(By.xpath("//input[@name=\"uid\"]")).sendKeys(usernameN);
-		driver.findElement(By.xpath("//input[@name=\"password\"]")).sendKeys(passwordN);
-		driver.findElement(By.xpath("//input[@name=\"btnLogin\"]")).click();
-		System.out.println(driver.switchTo().alert().getText());
-		String alert = "User or Password is not valid";
-		String alertActual = 	driver.switchTo().alert().getText();
-		Assert.assertEquals(alertActual, alert);
-		driver.switchTo().alert().accept();
+	driver.findElement(Username).sendKeys(userN);
+	driver.findElement(password).sendKeys(pass);
+	driver.findElement(btnLogin).click();
+	
+}
+public static void verifyTextpos() {
+	
+	 String actualpageName = driver.findElement(vrfText).getText();
+	 String expectedpageName = "Manger Id : mngr243094";
+	 Assert.assertEquals(actualpageName, expectedpageName);
+}
+public static void verifyTextneg() {
+	
+	 String actualpageName = driver.switchTo().alert().getText();
+	 String expectedpageName = "User or Password is not valid";
+	 System.out.println(actualpageName);
+	 Assert.assertEquals(actualpageName, expectedpageName);
+	 driver.switchTo().alert().accept();
+}
+	
+public static void cleanup() {
+	
+	driver.close();
+	
 	}
 	
-	@AfterMethod()
-	
-	public void cleanup() {
-		
-	
-		
-		driver.close();
-	}
 }

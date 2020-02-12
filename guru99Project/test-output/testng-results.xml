@@ -2,74 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="login Suite" duration-ms="21795" started-at="2020-02-01T00:43:48 EST" finished-at="2020-02-01T00:44:10 EST">
+  <suite name="Default suite" duration-ms="21964" started-at="2020-02-10T23:49:39 EST" finished-at="2020-02-10T23:50:01 EST">
     <groups>
     </groups>
-    <test name="login Test" duration-ms="21795" started-at="2020-02-01T00:43:48 EST" finished-at="2020-02-01T00:44:10 EST">
-      <class name="guru99Pages.loginPage">
-        <test-method status="PASS" signature="setupMethod(java.lang.String)[pri:0, instance:guru99Pages.loginPage@627551fb]" name="setupMethod" is-config="true" duration-ms="10609" started-at="2020-02-01T00:43:48 EST" finished-at="2020-02-01T00:43:59 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://www.demo.guru99.com/V4/]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="21964" started-at="2020-02-10T23:49:39 EST" finished-at="2020-02-10T23:50:01 EST">
+      <class name="guru99Project.testloginPage">
+        <test-method status="PASS" signature="setup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="setup" is-config="true" duration-ms="10654" started-at="2020-02-10T23:49:39 EST" finished-at="2020-02-10T23:49:50 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="negativeLogin(java.lang.String, java.lang.String)[pri:0, instance:guru99Pages.loginPage@627551fb]" name="negativeLogin" duration-ms="348" started-at="2020-02-01T00:43:59 EST" finished-at="2020-02-01T00:43:59 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr24678]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[hello]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testLoginpositive()[pri:1, instance:guru99Project.testloginPage@1dfe2924]" name="testLoginpositive" duration-ms="732" started-at="2020-02-10T23:49:50 EST" finished-at="2020-02-10T23:49:50 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- negativeLogin -->
-        <test-method status="PASS" signature="cleanup()[pri:0, instance:guru99Pages.loginPage@627551fb]" name="cleanup" is-config="true" duration-ms="112" started-at="2020-02-01T00:43:59 EST" finished-at="2020-02-01T00:43:59 EST">
+        </test-method> <!-- testLoginpositive -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="cleanup" is-config="true" duration-ms="117" started-at="2020-02-10T23:49:50 EST" finished-at="2020-02-10T23:49:50 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
-        <test-method status="PASS" signature="setupMethod(java.lang.String)[pri:0, instance:guru99Pages.loginPage@627551fb]" name="setupMethod" is-config="true" duration-ms="9945" started-at="2020-02-01T00:43:59 EST" finished-at="2020-02-01T00:44:09 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://www.demo.guru99.com/V4/]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="setup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="setup" is-config="true" duration-ms="9895" started-at="2020-02-10T23:49:50 EST" finished-at="2020-02-10T23:50:00 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="positiveLogin(java.lang.String, java.lang.String)[pri:0, instance:guru99Pages.loginPage@627551fb]" name="positiveLogin" duration-ms="619" started-at="2020-02-01T00:44:09 EST" finished-at="2020-02-01T00:44:10 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr243094]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[zYqAvan]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testLoginnegative()[pri:2, instance:guru99Project.testloginPage@1dfe2924]" name="testLoginnegative" duration-ms="431" started-at="2020-02-10T23:50:00 EST" finished-at="2020-02-10T23:50:01 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- positiveLogin -->
-        <test-method status="PASS" signature="cleanup()[pri:0, instance:guru99Pages.loginPage@627551fb]" name="cleanup" is-config="true" duration-ms="115" started-at="2020-02-01T00:44:10 EST" finished-at="2020-02-01T00:44:10 EST">
+        </test-method> <!-- testLoginnegative -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="cleanup" is-config="true" duration-ms="103" started-at="2020-02-10T23:50:01 EST" finished-at="2020-02-10T23:50:01 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
-      </class> <!-- guru99Pages.loginPage -->
-    </test> <!-- login Test -->
-  </suite> <!-- login Suite -->
+      </class> <!-- guru99Project.testloginPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
