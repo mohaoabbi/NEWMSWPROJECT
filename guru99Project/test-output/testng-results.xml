@@ -1,37 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21980" started-at="2020-02-11T20:32:11 EST" finished-at="2020-02-11T20:32:33 EST">
+  <suite name="Default suite" duration-ms="13901" started-at="2020-02-11T21:38:23 EST" finished-at="2020-02-11T21:38:37 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21980" started-at="2020-02-11T20:32:11 EST" finished-at="2020-02-11T20:32:33 EST">
-      <class name="guru99Project.testloginPage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="setup" is-config="true" duration-ms="10557" started-at="2020-02-11T20:32:11 EST" finished-at="2020-02-11T20:32:22 EST">
+    <test name="Default test" duration-ms="13901" started-at="2020-02-11T21:38:23 EST" finished-at="2020-02-11T21:38:37 EST">
+      <class name="guru99Project.mngNewCustomerTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:guru99Project.mngNewCustomerTest@35d176f7]" name="setup" is-config="true" duration-ms="7" started-at="2020-02-11T21:38:23 EST" finished-at="2020-02-11T21:38:23 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testLoginpositive()[pri:1, instance:guru99Project.testloginPage@1dfe2924]" name="testLoginpositive" duration-ms="714" started-at="2020-02-11T20:32:22 EST" finished-at="2020-02-11T20:32:22 EST">
+        <test-method status="PASS" signature="TestnewCustomerLink()[pri:0, instance:guru99Project.mngNewCustomerTest@35d176f7]" name="TestnewCustomerLink" duration-ms="13849" started-at="2020-02-11T21:38:23 EST" finished-at="2020-02-11T21:38:37 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginpositive -->
-        <test-method status="PASS" signature="cleanup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="cleanup" is-config="true" duration-ms="106" started-at="2020-02-11T20:32:22 EST" finished-at="2020-02-11T20:32:22 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="setup" is-config="true" duration-ms="10050" started-at="2020-02-11T20:32:22 EST" finished-at="2020-02-11T20:32:33 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testLoginnegative()[pri:2, instance:guru99Project.testloginPage@1dfe2924]" name="testLoginnegative" duration-ms="427" started-at="2020-02-11T20:32:33 EST" finished-at="2020-02-11T20:32:33 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginnegative -->
-        <test-method status="PASS" signature="cleanup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="cleanup" is-config="true" duration-ms="102" started-at="2020-02-11T20:32:33 EST" finished-at="2020-02-11T20:32:33 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanup -->
-      </class> <!-- guru99Project.testloginPage -->
+        </test-method> <!-- TestnewCustomerLink -->
+      </class> <!-- guru99Project.mngNewCustomerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
