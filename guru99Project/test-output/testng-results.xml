@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21964" started-at="2020-02-10T23:49:39 EST" finished-at="2020-02-10T23:50:01 EST">
+  <suite name="Default suite" duration-ms="21980" started-at="2020-02-11T20:32:11 EST" finished-at="2020-02-11T20:32:33 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21964" started-at="2020-02-10T23:49:39 EST" finished-at="2020-02-10T23:50:01 EST">
+    <test name="Default test" duration-ms="21980" started-at="2020-02-11T20:32:11 EST" finished-at="2020-02-11T20:32:33 EST">
       <class name="guru99Project.testloginPage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="setup" is-config="true" duration-ms="10654" started-at="2020-02-10T23:49:39 EST" finished-at="2020-02-10T23:49:50 EST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="setup" is-config="true" duration-ms="10557" started-at="2020-02-11T20:32:11 EST" finished-at="2020-02-11T20:32:22 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testLoginpositive()[pri:1, instance:guru99Project.testloginPage@1dfe2924]" name="testLoginpositive" duration-ms="732" started-at="2020-02-10T23:49:50 EST" finished-at="2020-02-10T23:49:50 EST">
+        <test-method status="PASS" signature="testLoginpositive()[pri:1, instance:guru99Project.testloginPage@1dfe2924]" name="testLoginpositive" duration-ms="714" started-at="2020-02-11T20:32:22 EST" finished-at="2020-02-11T20:32:22 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginpositive -->
-        <test-method status="PASS" signature="cleanup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="cleanup" is-config="true" duration-ms="117" started-at="2020-02-10T23:49:50 EST" finished-at="2020-02-10T23:49:50 EST">
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="cleanup" is-config="true" duration-ms="106" started-at="2020-02-11T20:32:22 EST" finished-at="2020-02-11T20:32:22 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="setup" is-config="true" duration-ms="9895" started-at="2020-02-10T23:49:50 EST" finished-at="2020-02-10T23:50:00 EST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="setup" is-config="true" duration-ms="10050" started-at="2020-02-11T20:32:22 EST" finished-at="2020-02-11T20:32:33 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testLoginnegative()[pri:2, instance:guru99Project.testloginPage@1dfe2924]" name="testLoginnegative" duration-ms="431" started-at="2020-02-10T23:50:00 EST" finished-at="2020-02-10T23:50:01 EST">
+        <test-method status="PASS" signature="testLoginnegative()[pri:2, instance:guru99Project.testloginPage@1dfe2924]" name="testLoginnegative" duration-ms="427" started-at="2020-02-11T20:32:33 EST" finished-at="2020-02-11T20:32:33 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginnegative -->
-        <test-method status="PASS" signature="cleanup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="cleanup" is-config="true" duration-ms="103" started-at="2020-02-10T23:50:01 EST" finished-at="2020-02-10T23:50:01 EST">
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:guru99Project.testloginPage@1dfe2924]" name="cleanup" is-config="true" duration-ms="102" started-at="2020-02-11T20:32:33 EST" finished-at="2020-02-11T20:32:33 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
