@@ -16,6 +16,7 @@ public class mngNewCustomer extends loginPage {
 		loginPage.loginMethod("mngr243094","zYqAvan");
 		System.out.println("I'm here");
 		driver.findElement(mngnewCustomer).click();
+		// I am Abbi messing with the code
 	
 	}
 
