@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="guru99Project.testloginPage">
+      <class name="guru99Project.mngNewCustomerTest">
         <methods>
-          <include name="cleanup"/>
           <include name="setup"/>
-          <include name="testLoginnegative"/>
+          <include name="TestnewCustomerLink"/>
         </methods>
-      </class> <!-- guru99Project.testloginPage -->
+      </class> <!-- guru99Project.mngNewCustomerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

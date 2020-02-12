@@ -7,11 +7,10 @@ import guru99Pages.loginPage;
 import guru99Pages.mngNewCustomer;
 
 public class mngNewCustomerTest {
+
 	@BeforeMethod()
 		
 		public void setup() {
-			
-			
 		}
 	
 	@Test ()
@@ -19,9 +18,7 @@ public class mngNewCustomerTest {
 	public void TestnewCustomerLink() {
 		
 		mngNewCustomer.newCustomerLink();
-	}
-	
-		
+	}	
 	}
 
 
