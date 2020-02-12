@@ -17,7 +17,7 @@ public class mngNewCustomer extends loginPage {
 		System.out.println("I'm here");
 		driver.findElement(mngnewCustomer).click();
 		/*
-		 * Abbi Karima Kilani
+		 * Abbi Karima Kilani killani barazatini
 		 */
 	
 	}
