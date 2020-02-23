@@ -4,10 +4,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Pages.Home;
+import Pages.Refinance;
 
-public class testHome extends Home {
-
+public class TestRefinanceClass extends Refinance {
+	
 	@BeforeMethod()
 	public void setupTest() throws InterruptedException{
 		setupEnv();
@@ -17,16 +17,17 @@ public class testHome extends Home {
 	@Test()
 	public void testHomeval() throws InterruptedException {
 
-		homeval("500000");
+		Originalhomeval("700000");
 	}
 	@Test()
 	public void testHomeval1() throws InterruptedException {
 
-		homeval("600000");
+		Originalhomeval("800000");
 	}
 
-	@AfterMethod
+	/*@AfterMethod
 	public void Testcleanup() {
 		cleanup();
-	}
+	}*/
+
 }

@@ -28,6 +28,13 @@ public class setupClass {
 			driver = new EdgeDriver();
 			}
 	}
-	
+	public void setupEnv() throws InterruptedException {
 
+		 launchDriver("chrome");
+		driver.get("https://www.mortgagecalculator.org/");
+	
+}
+	 public void cleanup() {
+			driver.close();
+		}
 }
