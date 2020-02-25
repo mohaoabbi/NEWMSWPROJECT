@@ -1,5 +1,11 @@
 package Pages;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -28,9 +34,20 @@ public class setupClass {
 			driver = new EdgeDriver();
 			}
 	}
-	public void setupEnv() throws InterruptedException {
+	public void getscreenshot() {
+	TakesScreenshot scrShot =((TakesScreenshot)driver);
+	File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+	File DestFile=new File("C:\\Users\\Abdel\\git\\NEWMSWPROJECT\\com.mortgagecalc\\target\\Screenshot.png");
+	try {
+		FileUtils.copyFile(SrcFile,DestFile);
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	}
+	public void setupEnv(String browser) throws InterruptedException {
 
-		 launchDriver("chrome");
+		 launchDriver(browser);
 		driver.get("https://www.mortgagecalculator.org/");
 	
 }

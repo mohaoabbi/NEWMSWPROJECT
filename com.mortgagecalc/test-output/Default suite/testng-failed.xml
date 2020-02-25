@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mortgagecalc.testHome">
+      <class name="com.mortgagecalc.TestRefinanceClass">
         <methods>
-          <include name="setupText"/>
-          <include name="testHomeval"/>
+          <include name="setupTest"/>
           <include name="testHomeval1"/>
+          <include name="Testcleanup"/>
         </methods>
-      </class> <!-- com.mortgagecalc.testHome -->
+      </class> <!-- com.mortgagecalc.TestRefinanceClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

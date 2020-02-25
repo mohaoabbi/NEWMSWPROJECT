@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.mortgagecalc.TestRefinanceClass]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.mortgagecalc.TestRefinanceClass">
+        <methods>
+          <include name="setupTest"/>
+          <include name="testHomeval1"/>
+          <include name="Testcleanup"/>
+        </methods>
+      </class> <!-- com.mortgagecalc.TestRefinanceClass -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.mortgagecalc.TestRefinanceClass] -->
