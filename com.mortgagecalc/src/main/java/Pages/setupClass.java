@@ -15,6 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class setupClass {
     static WebDriver driver;
+    static int count;
 
 	public static void  launchDriver(String browser) {
 		
@@ -41,7 +42,6 @@ public class setupClass {
 	try {
 		FileUtils.copyFile(SrcFile,DestFile);
 	} catch (IOException e) {
-		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
 	}
