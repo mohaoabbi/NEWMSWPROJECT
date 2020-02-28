@@ -5,8 +5,10 @@
     <classes>
       <class name="com.mortgagecalc.TestRefinanceClass">
         <methods>
+          <include name="testHomeoriginalval1"/>
+          <include name="testHomeoriginalval"/>
+          <include name="befrotestmethod"/>
           <include name="setupTest"/>
-          <include name="testHomeval1"/>
           <include name="Testcleanup"/>
         </methods>
       </class> <!-- com.mortgagecalc.TestRefinanceClass -->

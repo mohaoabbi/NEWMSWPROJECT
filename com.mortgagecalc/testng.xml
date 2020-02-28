@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-<listeners>
-<listener class-name="Pages.Listeners"/>
-</listeners>
-	<test thread-count="5" name="Test">
-		<classes>
-			<class name="com.mortgagecalc.testHome" />
-			<class name="com.mortgagecalc.TestRefinanceClass" />
-
-		</classes>
-	</test> <!-- Test -->
+<suite thread-count="20" name="Suite">
+  <test thread-count="20" name="Test">
+    <classes>
+      <class name="com.mortgagecalc.TestRefinanceClass"/>
+      <class name="com.mortgagecalc.testHome"/>
+      <class name="com.mortgagecalc.testTest"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
