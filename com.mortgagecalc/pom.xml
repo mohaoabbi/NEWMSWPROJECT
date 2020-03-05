@@ -5,6 +5,10 @@
 	<groupId>maverProject</groupId>
 	<artifactId>com.mortgagecalc</artifactId>
 	<version>MC 0.0.1</version>
+	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
@@ -17,7 +21,7 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.1.0</version>
-			
+
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
@@ -28,4 +32,5 @@
 
 
 	</dependencies>
+
 </project>

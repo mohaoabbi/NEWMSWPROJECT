@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14579" started-at="2020-03-05T02:13:44Z" finished-at="2020-03-05T02:13:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14579" started-at="2020-03-05T02:13:44Z" finished-at="2020-03-05T02:13:59Z">
+      <class name="WedClass.com.mcalculator.testHome">
+        <test-method status="PASS" signature="testneghomeval()[pri:0, instance:WedClass.com.mcalculator.testHome@d8355a8]" name="testneghomeval" duration-ms="6994" started-at="2020-03-05T02:13:44Z" finished-at="2020-03-05T02:13:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testneghomeval -->
+        <test-method status="PASS" signature="testposhomeval()[pri:0, instance:WedClass.com.mcalculator.testHome@d8355a8]" name="testposhomeval" duration-ms="7566" started-at="2020-03-05T02:13:51Z" finished-at="2020-03-05T02:13:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testposhomeval -->
+      </class> <!-- WedClass.com.mcalculator.testHome -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
